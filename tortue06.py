@@ -9,7 +9,7 @@ class Rectangle:
         self.height = height
         self.fg = fg
         self.bg = bg
-    
+
     def dessiner(self):
         t.up()
         t.goto(self.x, self.y)
@@ -23,7 +23,11 @@ class Rectangle:
 
 
 class RoundedRectangle(Rectangle):
-    def __init__(self, x=0, y=0, width=480, height=320, fg="black", bg="", radius=15):
+    def __init__(self,
+                 x=0, y=0,
+                 width=480, height=320,
+                 fg="black", bg="",
+                 radius=15):
         Rectangle.__init__(self, x, y, width, height, fg, bg)
         self.radius = radius
 
