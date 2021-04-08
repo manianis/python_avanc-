@@ -120,7 +120,7 @@ class Classe:
 
     def get_tuple(self, idxel):
         return tuple([idxel, self.eleves[idxel].nom_prenom] +
-                     [self.notes[self.get_key_by_index(idxel, idxdev)] 
+                     [self.notes[self.get_key_by_index(idxel, idxdev)]
                       for idxdev in range(len(self.devoirs))] +
                      [self.get_moyenne(idxel)])
 
